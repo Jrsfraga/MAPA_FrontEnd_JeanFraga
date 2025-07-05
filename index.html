@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- definição da linguagem em protuguês do Brasil -->
+
+<!-- Aqui estão as definições de visiualização e a chaamda dos links dos arquivos .css e .js -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francistreet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="form.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<!-- Abaixo dá-se início ao corpo do código contendo todas as usas aplicabilidades -->
+<body>
+
+    <!-- menús de navegação superior o LOGo e a frase slogan -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-menu">
+                <div>
+                    <li><a href="index.html" style="color: #ffffff;">Início</a></li>
+                </div>
+                <div>
+                    <li><a href="about.html" style="color: #ffffff;">Sobre</a></li>
+                </div>
+                <div>
+                     <li><a href="contact.html" style="color: #ffffff;">Contatos</a></li>
+                </div>
+                 <div>
+                     <li><a href="form.html" style="color: #ffffff;">Inscrição</a></li>
+                </div>
+                <div>
+                    <input type="text" id = "campoTexto" placeholder="Pesquise algo ...">
+                    <p id = "saida"> </p>
+                </div>
+            </div>
+        </nav>       
+        <div class="logo">
+            <img src="./assets/Logo.svg" class="logo-image" alt="Logo da empresa">
+        </div>
+        <h1 class="title">Slots TVDE sem complicação</h1>
+    </header>
+    
+    <!-- a parte central do corpo dividida em duas partes: a esquerda e a direita, sendo a direita dividida em mais duas parte através de "sections" -->
+    <main class="main">
+        <!-- lado esquerdo com ligação as redes sociais-->
+        <section class="main-left">
+            <a class="presentation-links-nav" href="packages.html" >
+            PACOTES TURÍSTICOS
+            </a>
+
+            <h2 class="presentation-links-subtitle">Acesse minhas redes:</h2>
+            
+            <a class="presentation-links-nav" href="https://www.instagram.com/cap.prt/">
+                <img class="presentation-links-image" src="./assets/instagram.png">
+                Instagram
+            </a>
+            <a class="presentation-links-nav" href="https://www.facebook.com/CAP.prt/">
+                <img class="presentation-links-image" src="./assets/facebook.png">
+                Facebook
+            </a>
+            <a class="presentation-links-nav" href="https://web.whatsapp.com/send?phone=351964503845&amp;entry_point=wa_pages&amp;type=custom_url" >
+                <img class="presentation-links-image" src="./assets/whatsapp.png">
+                Whatsapp
+            </a>
+        
+        </section>
+ 
+        <!-- lado direito formado pela informação dos serviços prestados pelo cliente através de "articles" divididos em lado esquerdo e lado direito, contendo um ícone, um título e um parágrafo -->
+         <!-- articles do lado esquerdo -->
+        <section class="main-middle-left">
+            <article class="main-middle-article">
+                <img src="./assets/003-licensing.png" class="main-middle-logos" alt="logo DUA">
+                <h2 class="main-middle-title">SEM ALTERAR DUA</h2>
+                <p>Não é necessário incluir o nome da empresa no DUA (Documento Único Automóvel). Ativamos veículos que não possuam DUA. Não perca tempo com burocracias.</p>
+            </article>
+            
+            <article class="main-middle-article">
+                <img src="./assets/004-call-center.png" class="main-middle-logos" alt="logo suporte humano">
+                <h2 class="main-middle-title">SUPORTE HUMANIZADO</h2>
+                <p>Não se aborreça com bots. Aqui, é atendido por pessoas dedicadas a resolver as suas questões. Se surgir alguma dúvida, a nossa equipa está sempre pronta para ajudar.</p>
+            </article>
+
+            <article class="main-middle-article">
+                <img src="./assets/001-premium-support.png" class="main-middle-logos" alt="logo suporte VIP">
+                <h2 class="main-middle-title">SUPORTE VIP</h2>
+                <p>Seus interesses representados presencialmente. Bloqueios indevidos de veículos e outros erros, que demorariam dias para resolver online, merecem uma solução rápida.</p>
+            </article>
+        </section>
+
+        <!-- articles do lado direito -->
+        <section class="main-middle-right">
+            <article class="main-middle-article">
+                <img src="./assets/005-secure-payment.png" class="main-middle-logos" alt="logo do seguro">
+                <h2 class="main-middle-title">SEGURO EM SEU NOME</h2>
+                <p>Enquanto titular da apólice, tem total controlo sobre os sinistros, e as indemnizações são pagas diretamente a si. Não corra riscos desnecessários. O seu património está protegido.</p>
+            </article>
+            
+            <article class="main-middle-article">
+                <img src="./assets/002-credit-cards-payment.png" class="main-middle-logos" alt="logo cartão frota">
+                <h2 class="main-middle-title">CARTÃO FROTA</h2>
+                <p>Com um grande volume da nossa frota, temos descontos máximos e exclusivos para abasteci- mentos feitos com o Cartão Frota. Uma melhor forma de gerir os seus gastos e obter excelentes disocntos. Junte-se a nós!</p>
+            </article>
+
+            <article class="main-middle-article">
+                <img src="./assets/006-travel_passengers.png" class="main-middle-logos"  alt="logo transporte de">
+                <h2 class="main-middle-title">TRANSPORTE DE PASSAGEIROS</h2>
+                <p>Os pacotes vendidos pela empresa poderão ser terceirizados aos respectivos motoristas que tem um Slot na Francistreet. Uma oportunidade para otimizar os seus ganhos. Faça parte dessa equipa!</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- rodapé com a informação de quem criou o site -->
+    <footer class="footer">
+        <p>criado por Jean Fraga</p>
+    </footer>
+</body>
+</html>

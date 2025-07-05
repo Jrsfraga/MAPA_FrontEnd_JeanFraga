@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- definição da linguagem em protuguês do Brasil -->
+
+<!-- Aqui estão as definições de visiualização e a conexão com o style.css e script.js apenas, difererntemente do "index.html" -->
+ <!-- Foi criado um arquivo "about.css" para auxiliar a visualização das aba diferentes do "index.html" -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a empresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="script.js" defer></script>
+</head>
+
+<!-- Abaixo dá-se início ao corpo do código contendo todas as usas aplicabilidades -->
+<body>
+    <!-- Abaixo está a réplica do menú de navegação superior sem o logo e a frase da empresa para o desenvolvimento de um Layout diferente nesta nova aba do site -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-menu">
+                <div>
+                    <li><a href="index.html" style="color: #ffffff;">Início</a></li>
+                </div>
+                <div>
+                    <li><a href="about.html" style="color: #ffffff;">Sobre</a></li>
+                </div>
+                <div>
+                     <li><a href="contact.html" style="color: #ffffff;">Contatos</a></li>
+                </div>
+                 <div>
+                      <li><a href="form.html" style="color: #ffffff;">Inscrição</a></li>
+                </div>
+                <div>
+                    <input type="text" id = "campoTexto" placeholder="Pesquise algo ...">
+                    <p id = "saida"> </p>
+                </div>
+            </div>
+        </nav>  
+
+<!--    <div class="logo">
+            <img src="./assets/Logo.svg" alt="Logo da empresa">
+        </div>
+        <h1 class="title">Slots TVDE sem complicação</h1> -->
+    </header>
+
+    <!-- O main está dividido em duas parte através do uso de uma "img" e uma "section", a primeira (img) contém o logo da empresa e a segunda (section), as informações sobre a empresa. A empresa não forneceu essas informações por isso foi feito o uso de "Lorem ipsum" para ter a noção visual -->
+    <main class="main-about">
+        <img class="main-about-image" src="./assets/Logo.svg" alt="Logo da empresa">   
+
+        <section>
+            <p class="main-about-parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus, excepturi vel aspernatur a provident hic sunt corporis omnis quisquam officia! Rerum nostrum ipsum odit temporibus ullam laboriosam beatae nobis!</p>
+            <p class="main-about-parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore velit totam alias, nemo recusandae id exercitationem et. Deleniti commodi dignissimos, aspernatur ex sit quam ullam aut temporibus magnam sint tenetur.</p>
+            <p class="main-about-parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eligendi odit consequatur. Numquam animi perferendis iusto non facilis. Culpa, exercitationem dolore quia alias earum laudantium dolores nisi hic magni dolorem.</p>
+        </section>
+    </main>
+
+    <!-- rodapé -->
+    <footer class="footer">
+    <p>criado por Jean Fraga</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- definição da linguagem em protuguês do Brasil -->
+
+<!-- Aqui estão as definições de visiualização e a conexão com o style.css, form.css e script.js -->
+<!-- Foi criado um arquivo "form.css" para auxiliar nas formatações -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js" defer></script>
+</head>
+
+<!-- Abaixo dá-se início ao corpo do código contendo todas as usas aplicabilidades -->
+<body>
+    <!-- Abaixo está a réplica do menú de navegação superior sem o logo e a frase da empresa para o desenvolvimento de um Layout diferente nesta nova aba do site -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-menu">
+                <div>
+                    <li><a href="index.html" style="color: #ffffff;">Início</a></li>
+                </div>
+                <div>
+                    <li><a href="about.html" style="color: #ffffff;">Sobre</a></li>
+                </div>
+                <div>
+                    <li><a href="contact.html" style="color: #ffffff;">Contatos</a></li>
+                </div>
+                <div>
+                     <li><a href="form.html" style="color: #ffffff;">Inscrição</a></li>
+                </div>
+                <div>
+                <input type="text" id = "campoTexto" placeholder="Pesquise algo ...">
+                <p id = "saida"> </p>
+                </div>
+            </div>
+        </nav>  
+    </header>
+ 
+    <main class="main">
+        <!-- Criação da Ficha de inscrição que terá sua validação através de JavaScript, no Script.js -->
+        <div class="box">
+            <form class="box-form"  id="box-form">
+                <fieldset>
+                    <legend><b>Faça sua Inscrição</b></legend>
+                    <br>
+                    <div class="box-input">
+                        <input type="name" name="name" id="name" class="input-user required" oninput="nameValidate()">
+                        <label class="label-input" for="name">Nome Completo</label>
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                    </div>
+                    <br>
+                    <div class="box-input">
+                        <input type="email" name="email" id="email" class="input-user required" oninput="emailValidate()">
+                        <label class="label-input" for="email">E-mail</E-mail></label>
+                        <span class="span-required">Digite um e-mail válido</span>
+                    </div>
+                    <br>
+                    <div class="box-input">
+                        <input type="phone" name="phone" id="phone"  class="input-user required" oninput="phoneValidate()">
+                        <label class="label-input" for="phone">Contato telefónico</label>
+                        <span class="span-required">Insira um número de telefone válido</span>
+                    </div>
+                    <br>
+                    
+                    <label for="date"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="date" id="date required">
+                    <br><br><br>
+
+                    <div class="box-input">
+                        <input type="password" name="password" id="password"  class="input-user required" oninput="passwordValidade()">
+                        <label class="label-input" for="password">Digite sua senha</label>
+                        <span class="span-required">Digite uma senha válida</span>
+                    </div>
+                    <br>
+                    <div class="box-input">
+                        <input type="password-compare" name="password-compare" id="password-compare"  class="input-user required" oninput="comparePassword()">
+                        <label class="label-input" for="password-compare">Repita sua Senha</label>
+                        <span class="span-required">Confirme sua senha</span>
+                    </div>
+                    <br><br>
+
+                    <input type="submit" name="submit" id="submit">
+                    
+
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!-- rodapé -->
+    <footer class="footer">
+    <p>criado por Jean Fraga</p>
+    </footer>
+</body>
+</html>

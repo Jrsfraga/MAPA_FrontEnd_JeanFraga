@@ -1,0 +1,112 @@
+/* réplica da criação de variáveis */
+:root {
+   --primary-color: #00CED1;
+    --secondary-color: #FFD700;
+    --acentcolor: #ff0266;
+    --primary-text-color: #ffffff;
+    --secondary-text-color:#070748;
+    --primary-font: "Krona One", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+    --other-font: "Parisienne";
+}
+
+/* Estilização do body do formulário*/
+body {
+    font-family: var(--secondary-font);
+}
+
+/* Estilização do formulário */
+.box {
+    position: relative;
+    left: 35%;
+    background-color: var(--secondary-text-color);
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+fieldset {
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+}
+
+legend {
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--secondary-text-color);
+}
+
+.box-input {
+    position: relative;
+}
+
+.input-user {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-text-color);
+    outline: none;
+    color: var(--primary-text-color);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.label-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5px;
+}
+
+/* alteração visual durante do preenchimento */
+.input-user:focus ~ .label-input,
+.input-user:valid ~ .label-input {
+    top: -20px;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+/* uso de avisos caso haja erro no preenchimento */
+.span-required {
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--acentcolor);
+    display: none;
+}
+
+/* campo data com preenchimento semi-automatico */
+#date {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+/* introdução de um botão de submissão com validação em JS */
+#submit {
+    background-color: var(--primary-color);
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    color: var(--primary-text-color);
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+#submit:hover{
+box-shadow: 2px 4px 30px var(--secondary-color);
+}
+
+/* posicionamento diferenciado e fixado do rodapé nessa aba */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 42%;
+}

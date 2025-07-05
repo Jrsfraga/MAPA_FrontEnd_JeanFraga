@@ -1,0 +1,218 @@
+/* importação de fontes do GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* Resets principais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* criação de variáveis */
+:root {
+    --primary-color: #00CED1;
+    --secondary-color: #FFD700;
+    --acentcolor: #ff0266;
+    --primary-text-color: #ffffff;
+    --secondary-text-color:#070748;
+    --primary-font: "Krona One", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+    --other-font: "Parisienne";
+  }
+
+/* Estilização do body */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg,var(--primary-color) 10%, var(--secondary-color) 90%);
+  color: var(--primary-text-color);
+  justify-content: center;
+  align-items:center;
+}
+
+/* Estilização do Menu de Navegação superior */
+.nav {
+  background-color: var(--secondary-text-color);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary-text-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 5px 80px;
+}
+
+/* Cabeçalho da Página */
+.logo {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+  margin-left: 350px;
+}
+
+.logo-image {
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  height: 100px;
+  font-family: var(--secondary-font);
+  color: var(--secondary-text-color);
+  font-size: 2.8rem;
+}
+
+
+/* Início do Main - Lado esquerdo*/
+.main {
+  display: flex;
+  justify-content:space-between;
+  margin: 10px 100px;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 33%;
+  position: fixed;
+  top: 150px;
+}
+
+.presentation-links-subtitle {
+  font-family: var(--primary-font);    
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}
+
+.presentation-links-nav {
+  display: flex;
+  justify-content: center;
+  GAP: 16px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 16px;
+  width: 200px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 12px 0px;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-family: var(--secondary-font);
+}
+
+.presentation-links-nav:hover {
+  background-color: var(--secondary-color);
+}
+
+
+/* Início do Main - parte central*/
+.main-middle-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 300px;
+  width: 33%;
+}
+
+.main-middle-right {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.main-middle-title {
+margin-bottom: 10px;
+align-items: center;
+font-size: 1.25rem;
+}
+
+.main-middle-logos {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+
+.main-middle-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  transition: 1s;
+  padding: 10px 10px 10px 10px;
+  background-image: linear-gradient(135deg,var(--secondary-color) 10%, var(--primary-color) 90%);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 350px;
+  height: 200px;
+}
+
+.main-middle-article:hover{
+  box-shadow: 2px 4px 30px var(--secondary-text-color);
+}
+
+
+
+
+
+/* Rodapé */
+
+.footer {
+    padding: 12px;
+    color: var(--secondary-text-color);
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: linear-gradient(135deg,var(--primary-color) 10%, var(--secondary-color) 90%);
+    font-family: var(--secondary-font);
+
+}
+
+
+@media (max-width: 844px) {
+
+  body {
+    width: 100%;
+  }
+
+
+  .logo {
+    width: auto;
+    margin-left: unset;
+  }
+
+  .title {
+    margin-left:unset;
+    width: unset;
+  }
+  
+  .main {
+    flex-direction: column-reverse;
+ 
+  }
+
+  .main-left {
+    position: unset;
+  }
+
+  .main-middle-left {
+    margin-top: 30px;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .main-middle-right {
+    margin-top: 30px;
+    width: 100%;
+    gap: 5px;
+  }
+
+
+}
